@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    color: white;
+}
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;   
+    background-color: #0C0032; 
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.nick-pic {
+    width: 40%;
+    object-fit: cover;
+}
+
+.about-description {
+    background-color: #190061;
+    padding: 25px;
+    height: 450px;
+    width: 50%;
+}
+
+.my-work {
+    margin: 25px;
+}
+
+.project-grid {
+    display: grid;
+}
+
+.contact {
+    margin: 25px;
+}
