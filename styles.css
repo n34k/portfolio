@@ -17,13 +17,25 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;   
-    background-color: #0C0032; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: #190061; 
     padding: 10px;
+    height: 47.5;
     width: 100%;
     position: fixed;
     top: 0;
+    border-bottom: 5px solid #0C0032;
+}
 
+.menu-img {
+    padding-right: 25px;
+    padding-left: 40px;
+}
+
+.menu-img:hover {
+    opacity: .5;
+    cursor: pointer;
 }
 
 .about-me {
@@ -31,19 +43,22 @@ header {
     justify-content: center;
     align-items: center;
     margin: 25px;
-    margin-top: 80px;
+    margin-top: 115px;
 }
 
 .nick-pic {
     width: 40%;
     object-fit: cover;
+    border: 5px solid #0C0032;
 }
 
 .about-description {
-    background-color: #3500d3;
+    background-color: #240090;
+    border: 5px solid #0C0032;
     padding: 25px;
-    height: 450px;
+    height: fit-content;
     width: 50%;
+
 }
 
 .my-work {
@@ -66,7 +81,7 @@ header {
 }
 
 .screenshot-box {
-    border: white 1px solid;
+    border: #0C0032 5px solid;
     height: 200px;
     width: 350px;
     overflow: hidden;
@@ -78,8 +93,8 @@ header {
 }
 
 .description-box {
-    border: white 1px solid;
-    background-color: #190061;
+    border: #0C0032 5px solid;
+    background-color: #240090;
     height: 125px;
     width: 350px;
 }
@@ -91,7 +106,8 @@ header {
 }
 
 .contact {
-    background-color: #240090;
+    background-color: #190061;
+    border-top: 5px solid #0C0032;
     height: 500px;
     padding: 50px;
     display: flex;
@@ -112,4 +128,20 @@ header {
 .logo {
     height: 25px;
     width: 25px;
+}
+
+@media (max-width: 1100px) {
+    .about-me {
+        flex-direction: column;
+    }
+    .nick-pic {
+        width: 80%;
+    }
+
+    .about-description {
+        width: 70%;
+    }
+    .head-buttons {
+        height: 26px;
+    }
 }
