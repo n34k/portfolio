@@ -28,14 +28,77 @@ header {
     border-bottom: 5px solid #0C0032;
 }
 
-.menu-img {
-    padding-right: 25px;
-    padding-left: 40px;
+.button-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
 }
 
-.menu-img:hover {
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #190061;
+    border: none;
+}
+
+.menu-img {
+   padding-right: 15px;
+   height: 25px;
+   display: none;
+}
+
+.menu-img:hover, button:hover {
     opacity: .5;
     cursor: pointer;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 25px;
+    margin-top: 70px;
+    height: 85vh;
+}
+
+
+
+.top-text, .biggest-text, .bigger-text, .bottom-text {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.biggest-text {
+    font-size: 100px;
+}
+
+.bottom-text {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    align-items: center;
+}
+
+.fade {
+    opacity: 1;
+}
+
+.down-arrow {
+    animation: 1s blink infinite alternate;
+    height: 25px;
+    width: 25px;
+    z-index: -1;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .about-me {
@@ -43,17 +106,16 @@ header {
     justify-content: center;
     align-items: center;
     margin: 25px;
-    margin-top: 115px;
 }
 
 .nick-pic {
-    width: 40%;
+    width: 35%;
     object-fit: cover;
     border: 5px solid #0C0032;
 }
 
 .about-description {
-    background-color: #240090;
+    background-color: #190061;
     border: 5px solid #0C0032;
     padding: 25px;
     height: fit-content;
@@ -94,9 +156,13 @@ header {
 
 .description-box {
     border: #0C0032 5px solid;
-    background-color: #240090;
-    height: 125px;
+    background-color: #190061;
+    height: fit-content;
     width: 350px;
+}
+
+.description {
+    padding: 5px;
 }
 
 .project-title {
@@ -108,11 +174,12 @@ header {
 .contact {
     background-color: #190061;
     border-top: 5px solid #0C0032;
-    height: 500px;
+    height: 300px;
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo-box{ 
@@ -144,4 +211,14 @@ header {
     .head-buttons {
         height: 26px;
     }
+}
+
+@media (max-width: 950px) {
+    .button-box {
+        display: none;
+    }
+    .menu-img {
+        display: block;
+    }
+
 }

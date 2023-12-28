@@ -9,18 +9,35 @@
 <body>
     <header>
         <h2>Nick Davis</h2>
-        <h1>My Portfolio</h1>
-        <img tabindex="0" class="menu-img" src="images/menu.svg" alt="menu">
+        <div class="button-box">
+            <button><a href="#home">Home</a></button>
+            <button><a href="#about">About</a></button>
+            <button><a href="#work">My Work</a></button>
+            <button><a href="#contact">Contact</a></button>
+            <a href="images/SE Resume.pdf" target="_blank"><button>Resume</button></a>
+        </div>
+        <img class="menu-img" src="images/menu.svg" alt="menu" tabindex="0">
     </header>
-    <main>
+    <main id="home">
+        <div class="home">
+            <h2 class="top-text">Hello! My name is </h2>
+            <h1 class="biggest-text">Nick Davis.</h1>
+            <h2 class="bigger-text">Welcome to my portfolio website.</h2>
+            <div class="bottom-text">
+                <h3>Learn more</h3>
+                <img class="down-arrow" src="images/down-arrow.png" alt="scroll down">
+                <img class="down-arrow" src="images/down-arrow.png" alt="scroll down">
+                <img id="about" class="down-arrow" src="images/down-arrow.png" alt="scroll down">
+            </div>
+        </div>
         <div class="about-me">
             <img src="images/nickpic.JPG" alt="Picture of Nick" class="nick-pic">
             <div class="about-description">
                 <h2>About Me</h2>
-                <p>My name is Nick Davis. Currently I am a sophomore at Fresno State majoring in Computer Science. I have a passion for coding and aspire to be a software engineer in the future. To accomplish this, I have been studying hard in school to maintain a high GPA, practice LeetCode daily, and work on my software development skills with many different projects that you can see on this page. At this moment I am looking for an internship and am open to any oppurtunities. I can guarantee to any employer that in hiring me they will be gaining their hardest working intern and will not regret their decision. Outside of school and coding, I enjoy working out, being in nature, spending time with friends and famliy, and am a big football fan. I played football from age 10 till 17, and I can attribute my strong work ethic to my time spent practicing and playing football. I am a big fan of the 49ers and Fresno State football team and have fun rooting for them. I also participate in clubs and societies to improve my leadership and teamwork skills. These include the Fresno State CSCI Club, Sigma Chi Fraternity, and the Society of Hispanic Professional Engineers. Lastly, I thank you for taking the time to look at my website. I am proud of these projects and only look to create more. Have a great day!</p>
+                <p>Currently I am a sophomore at Fresno State majoring in Computer Science. I have a passion for coding and aspire to be a software engineer in the future. To accomplish this, I have been studying hard in school to maintain a high GPA, practice LeetCode daily, and work on my software development skills with many different projects that you can see on this page. At this moment I am looking for an internship and am open to any oppurtunities. I can guarantee to any employer that in hiring me they will be gaining their hardest working intern and will not regret their decision. Outside of school and coding, I enjoy working out, being in nature, spending time with friends and famliy, and am a big football fan. I played football from age 10 till 17, and I can attribute my strong work ethic to my time spent practicing and playing football. I am a big fan of the 49ers and Fresno State football team and have fun rooting for them. I also participate in clubs and societies to improve my leadership and teamwork skills. These include the Fresno State CSCI Club, Sigma Chi Fraternity, and the Society of Hispanic Professional Engineers. Lastly, I thank you for taking the time to look at my website. I am proud of these projects and only look to create more. Have a great day!</p>
             </div>
         </div>
-        <div class="my-work"> 
+        <div id="work" class="my-work"> 
             <h2>My Work</h2>
             <div class="project-grid">
                 <div class="project-box">
@@ -30,11 +47,11 @@
                     <div class="description-box">
                         <div class="project-title">
                             <h3>Etch-A-Sketch</h3>
-                            <a href="https://github.com/n34k/etch-a-sketch"><img class="logo" src="images/github.png" alt="see on github"></a>
+                            <a target="_blank" href="https://github.com/n34k/etch-a-sketch"><img class="logo" src="images/github.png" alt="see on github"></a>
                         </div>
-                        <div class="description">
-
-                        </div>
+                        <p class="description">
+                            Simple app made with HTML, CSS, and Javascript. Allows users to sketch on a size adjustable, color-changing grid.
+                        </p>
                     </div>
                 </div>
                 <div class="project-box">
@@ -44,8 +61,11 @@
                     <div class="description-box">
                         <div class="project-title">
                             <h3>GetWeather</h3>
-                            <a href="https://github.com/n34k/weather-app"><img class="logo" src="images/github.png" alt="see on github"></a>
+                            <a target="_blank" target="_blank" href="https://github.com/n34k/weather-app"><img class="logo" src="images/github.png" alt="see on github"></a>
                         </div>
+                        <p class="description">
+                            Made with HTML, CSS, and Javascript, using weatherAPI. Allows users to see the weather from city of their choice. Has reactive backgrounds and celcius option.
+                        </p>
                     </div>
                 </div>
                 <div class="project-box">
@@ -55,8 +75,11 @@
                     <div class="description-box">
                         <div class="project-title">
                             <h3>ToDo Checklist</h3>
-                            <a href="https://github.com/n34k/to-do"><img class="logo" src="images/github.png" alt="see on github"></a>
+                            <a target="_blank" href="https://github.com/n34k/to-do"><img class="logo" src="images/github.png" alt="see on github"></a>
                         </div>
+                        <p class="description">
+                            Made with HTML, CSS, and Javascript. Allows user to create a project that holds taks they need to do.
+                        </p>
                     </div>
                 </div>
                 
@@ -64,7 +87,7 @@
         </div>
         <div class="contact">
             <h2>Contact Me!</h2>
-            <p>Please contact me with any questions, oppurtunities, or if you just want to talk about anything!</p>
+            <p>Please contact me with any oppurtunities, questions, or if you just want to talk about anything!</p>
             <div class="logo-box">
                 <img class="logo" src="images/phone.png" alt="phone">
                 <p>-559-321-3634</p>
@@ -73,10 +96,9 @@
                 <img class="logo" src="images/email.png" alt="email">
                 <p>-ndavis55862@gmail.com</p>
             </div>
-            <div class="logo-box">
-                <a href="https://github.com/n34k"><img class="logo" src="images/github.png" alt="github logo"></a>
-                <a href="https://www.linkedin.com/in/nicholas-davis4/"><img class="linked-logo" src="images/linkedin.png" alt="linkedin logo"></a>
-
+            <div id="contact" class="logo-box">
+                <a target="_blank" href="https://github.com/n34k"><img class="logo" src="images/github.png" alt="github logo"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/nicholas-davis4/"><img class="linked-logo" src="images/linkedin.png" alt="linkedin logo"></a>
             </div>
         </div>
     </main>
