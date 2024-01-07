@@ -26,6 +26,7 @@ header {
     position: fixed;
     top: 0;
     border-bottom: 5px solid #0C0032;
+    z-index: 5;
 }
 
 .button-box {
@@ -64,8 +65,7 @@ button {
 }
 
 
-
-.top-text, .biggest-text, .bigger-text, .bottom-text {
+.top-text, .biggest-text, .bigger-text, .bottom-text, .about-me, .work {
     opacity: 0;
     transition: opacity 1s ease-out;
 }
@@ -123,9 +123,8 @@ button {
 
 }
 
-.my-work {
-    margin: 50px;
-    
+.work {
+    margin: 50px;   
 }
 
 .project-grid {
