@@ -5,6 +5,8 @@ const DOM = (() => {
     const learn = document.querySelector('.bottom-text');
     const aboutMe = document.querySelector('.about-me');
     const work = document.querySelector('.work');
+    const menu = document.querySelector('.menu-img');
+    const dropDown = document.querySelector('.dropdown');
 
     const fadeEvent = () => {
         hello.classList.add("fade");
@@ -22,28 +24,40 @@ const DOM = (() => {
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.bottom >= 0 &&
+            rect.left <= (window.innerWidth || document.documentElement.clientWidth) &&
+            rect.right >= 0
         );
       }
 
     const fadeScroll = () => {
         if (isInViewport(aboutMe)) {
             aboutMe.classList.add('fade');
-          }
+        }
     
-          if (isInViewport(work)) {
+        if (isInViewport(work)) {
             work.classList.add('fade');
-          }
+        }
     }
 
-    const fadeLoad = () => {
+    const dropDownEvent = () => {
+        menu.addEventListener('click', () => {
+            if(dropDown.style.display === "flex")  {
+                dropDown.style.display = "none";
+            }
+            else {
+                dropDown.style.display = "flex";
+            }
+        })
+    }
+
+    const Events = () => {
         document.addEventListener("DOMContentLoaded" , fadeEvent);
         window.addEventListener('scroll', fadeScroll);
+        dropDownEvent();
     }
-    return{fadeLoad}
+    return{Events}
 })();
 
-DOM.fadeLoad();
+DOM.Events();

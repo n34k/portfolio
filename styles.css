@@ -44,8 +44,21 @@ button {
     border: none;
 }
 
+.dropdown {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 60px;
+}
+
+.drop-button {
+    padding: 15px;
+    border: #0C0032 solid 2.5px;
+}
+
 .menu-img {
-   padding-right: 15px;
+   padding-right: 30px;
    height: 25px;
    display: none;
 }
@@ -226,6 +239,7 @@ button {
         font-size: 60px;
     }
 }
+
 @media (max-width: 450px) {
     .bigger-text {
         font-size: 20px;
