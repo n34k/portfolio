@@ -183,6 +183,35 @@ button {
     padding: 10px;
 }
 
+.archived-section {
+    margin-top: 40px;
+}
+
+.archived-section summary {
+    cursor: pointer;
+    font-size: 22px;
+    opacity: 1;
+    padding: 10px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.archived-section summary::before {
+    content: '▶';
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+
+.archived-section[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.archived-section summary:hover {
+    opacity: 0.7;
+}
+
 .contact {
     background-color: #190061;
     border-top: 5px solid #0C0032;
