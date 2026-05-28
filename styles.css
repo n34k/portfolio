@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Poppins';
-    src: url('fonts/Poppins/Poppins-Light.ttf');
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-Light.ttf");
     font-weight: normal;
     font-size: normal;
 }
@@ -8,7 +8,7 @@
 * {
     margin: 0;
     color: white;
-    font-family: 'Poppins';
+    font-family: "Poppins";
 }
 
 body {
@@ -19,13 +19,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #190061; 
+    background-color: #190061;
     padding: 10px;
     height: 47.5;
     width: 100%;
     position: fixed;
     top: 0;
-    border-bottom: 5px solid #0C0032;
+    border-bottom: 5px solid #0c0032;
     z-index: 5;
 }
 
@@ -54,17 +54,19 @@ button {
 
 .drop-button {
     padding: 15px;
-    border: #0C0032 solid 2.5px;
+    border: #0c0032 solid 2.5px;
 }
 
 .menu-img {
-   padding-right: 30px;
-   height: 25px;
-   display: none;
+    padding-right: 30px;
+    height: 25px;
+    display: none;
 }
 
-.screenshot:hover, .menu-img:hover, button:hover {
-    opacity: .5;
+.screenshot:hover,
+.menu-img:hover,
+button:hover {
+    opacity: 0.5;
     cursor: pointer;
 }
 
@@ -77,8 +79,12 @@ button {
     height: 85vh;
 }
 
-
-.top-text, .biggest-text, .bigger-text, .bottom-text, .about-me, .work {
+.top-text,
+.biggest-text,
+.bigger-text,
+.bottom-text,
+.about-me,
+.work {
     opacity: 0;
     transition: opacity 1s ease-out;
 }
@@ -124,28 +130,27 @@ button {
 .nick-pic {
     width: 35%;
     object-fit: cover;
-    border: 5px solid #0C0032;
+    border: 5px solid #0c0032;
 }
 
 .about-description {
     background-color: #190061;
-    border: 5px solid #0C0032;
+    border: 5px solid #0c0032;
     padding: 25px;
     height: fit-content;
     width: 50%;
-
 }
 
 .work {
-    margin: 50px;   
+    margin: 50px;
 }
 
 .project-grid {
-   padding-top: 25px;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   gap: 50px;
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
 }
 
 .project-box {
@@ -155,7 +160,7 @@ button {
 }
 
 .screenshot-box {
-    border: #0C0032 5px solid;
+    border: #0c0032 5px solid;
     height: 200px;
     width: 350px;
     overflow: hidden;
@@ -167,7 +172,7 @@ button {
 }
 
 .description-box {
-    border: #0C0032 5px solid;
+    border: #0c0032 5px solid;
     background-color: #190061;
     height: fit-content;
     width: 350px;
@@ -199,7 +204,7 @@ button {
 }
 
 .archived-section summary::before {
-    content: '▶';
+    content: "▶";
     font-size: 14px;
     transition: transform 0.2s;
 }
@@ -214,7 +219,7 @@ button {
 
 .contact {
     background-color: #190061;
-    border-top: 5px solid #0C0032;
+    border-top: 5px solid #0c0032;
     height: 300px;
     padding: 50px;
     display: flex;
@@ -223,9 +228,10 @@ button {
     align-items: center;
 }
 
-.logo-box{ 
+.logo-box {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .linked-logo {
@@ -272,7 +278,7 @@ button {
 @media (max-width: 450px) {
     .bigger-text {
         font-size: 20px;
-    } 
+    }
 }
 
 @media (max-width: 380px) {
@@ -282,8 +288,9 @@ button {
     .bigger-text {
         font-size: 15px;
     }
-    .screenshot-box, .description-box, .screenshot {
+    .screenshot-box,
+    .description-box,
+    .screenshot {
         width: 250px;
     }
 }
-
